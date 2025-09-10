@@ -58,3 +58,31 @@ int main() {
 
     return 0;
 }
+/* code chat gpt
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int n; 
+    cin >> n;
+
+    vector<int> res;
+    if (n % 2 == 0) {
+        // n chẵn -> toàn bộ là số 2
+        int cnt = n / 2;
+        cout << cnt << "\n";
+        for (int i = 0; i < cnt; i++) cout << 2 << " ";
+    } else {
+        // n lẻ -> (n-3)/2 số 2 và 1 số 3
+        int cnt = (n - 3) / 2 + 1; 
+        cout << cnt << "\n";
+        for (int i = 0; i < (n - 3) / 2; i++) cout << 2 << " ";
+        cout << 3;
+    }
+    return 0;
+}
+
+*/
